@@ -5,37 +5,43 @@
 
 $(document).ready(function(){
 
-    
+	// Owl carousel slider ====================================
 
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        navText: false,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:true   
-            },
-            600:{
-                items:3,
-                nav:true
-            },
-            1000:{
-                items:5,
-                nav:false,
-                loop:false,
-                dots: false
+	initOwl();
 
-            }
-        }
-    });
+    function initOwl(){
+
+	    $('.owl-carousel').owlCarousel({
+	        loop:true,
+	        margin:15,
+	        navText:false,
+	        responsiveClass:true,
+	        responsive:{
+	            0:{
+	                items:1,
+	                nav:true   
+	            },
+	            600:{
+	                items:3,
+	                nav:true
+	            },
+	            1000:{
+	                items:5,
+	                nav:false,
+	                loop:false,
+	                dots:false
+	            }
+	        }
+	    });
+
+	}; // closing initOwl
 
 
+
+	// On window load fade in ====================================
 
     delayText();
    
-	
 	function delayText(){
 
 		window.setTimeout(function(){
