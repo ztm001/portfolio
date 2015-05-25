@@ -25,28 +25,43 @@
   // 		-o-background-size: cover;
   // 		background-size: cover;
   		position: relative;
+  		border: 10px solid $main-col;
 		
 }
 
 #nameText {
 	margin-top: 10px;
+	display: none;
 }
 
-.contact {
+#contactText {
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
+	display: none;
 }
 
 
 #projectSlider {
 	margin-top: 10%;
+	transition: opacity 1s ease-out;
 }
 
-.project {
-	padding: 40%;
-	background-color: blue;
+.opacity0 {
+	opacity: 0;
+	transition: opacity 1s ease-out;
 }
+
+#getfree,
+#lordsofdogtown,
+#fontface,
+#surfaid,
+#damagedgoods {
+	padding: 40%;
+	background-color: $main-col;
+}
+
+
 
 
 

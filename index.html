@@ -15,6 +15,7 @@
 
 
 
+
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -49,19 +50,19 @@
 
 
         
-          <div id="projectSlider" class="owl-carousel">
-            <div class="project">  </div>
-            <div class="project">  </div>
-            <div class="project">  </div>
-            <div class="project">  </div>
-            <div class="project">  </div>
-            <div class="project">  </div>
-            <div class="project">  </div>
-          </div>
+          
+            <div id="projectSlider" class="owl-carousel opacity0">
+              <div id="getfree">  </div>
+              <div id="lordsofdogtown">  </div>
+              <div id="fontface">  </div>
+              <div id="surfaid">  </div>
+              <div id="damagedgoods">  </div>
+            </div>
+          
         
 
 
-        <div class="contact">
+        <div id="contactText">
           <h2>Contact</h2>
         </div>
 
@@ -69,36 +70,14 @@
 </div>	
 
 
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="src/js/owl.carousel.min.js"></script>
-<script>
+<script src="src/js/main.js"></script>
 
-  $(document).ready(function(){
+  <noscript>
+    <h1>To view this site properly, please enable Javascript in your web browser settings!</h1>
+  </noscript>
 
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:true
-            },
-            600:{
-                items:3,
-                nav:false
-            },
-            1000:{
-                items:5,
-                nav:true,
-                loop:false
-            }
-        }
-    });
-
-  });
-
-</script>
 
 
 </body>
